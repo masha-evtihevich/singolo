@@ -1,0 +1,11 @@
+// Config
+@import '../scss/config/base';
+@import 'config/_mixins';
+@import 'config/_resets';
+@import 'config/_variables.scss';
+
+// // Components
+@import 'components/header';
+
+// Media
+@import 'config/media';
