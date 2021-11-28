@@ -1,37 +1,35 @@
+.gamburger-menu {
+  display: none;
+}
 .header {
   background-color: $color-base-blue;
-}
-.header-nav {
-  max-width: 940px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 32px;
-
+  &__nav {
+    @include flex;
+    padding: 29px 0 35px 0;
+  }
   &__title {
+    @include font($font-weight-700, $color-white, $font-size-25);
     text-transform: $text-uppercase;
     color: $color-white;
-    @include font($font-weight-700, $color-white, $font-size-25);
   }
   &__note {
     color: $color-pink;
   }
   &__list {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    align-items: center;
+    @include flex;
   }
   &__item {
-    padding-left: 60px;
+    padding-left: 25px;
     &:after {
       content: "";
       position: relative;
+      bottom: 9px;
+      right: 14px;
+
       display: table-cell;
-      height: 0.3em;
-      width: 0.3em;
-      bottom: 10px;
-      right: 28px;
+      height: 0.2em;
+      width: 0.2em;
+  
       background: $color-white;
       border-radius: 50%;
     }
@@ -41,8 +39,8 @@
     }
   }
   &__link {
-    text-transform: $text-uppercase;
     @include font($font-weight-700, $color-white, $font-size-12);
+    text-transform: $text-uppercase;
     text-decoration: none;
     &:hover {
       color: $color-pink;
