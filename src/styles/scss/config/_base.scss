@@ -1,5 +1,9 @@
 .wrap {
+  overflow-x: hidden;
   display: grid;
   max-width: 1020px;
   margin: 0 auto;
+}
+.container {
+  @include container;
 }
