@@ -4,3 +4,12 @@
     color: $color-text;
     font-size: $font-sizes;
 }
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin container {
+    margin: 0 auto;
+    width: 90%;
+}
