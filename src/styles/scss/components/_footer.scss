@@ -1,0 +1,36 @@
+.footer {
+    background-color: $color-base-blue;
+    border-top: 6px solid #323746;
+    &__container {
+        @include flex;
+        padding: 30px 0;
+    }
+    &__copyright {
+        @include font ($font-weight-900, $color-title, $font-size-13)
+    }
+    &__item {
+        display: inline;
+    }
+    &__link {
+        display: inline-block;
+
+        height: 40px;
+        width: 35px;
+
+        text-decoration: none;
+
+        background: url(../../../src/images/footer/social-buttons.png) no-repeat;
+        &--facebook {
+            background-position: 0 7px;
+        }
+        &--google {
+            background-position: -40px 7px;
+        }
+        &--twitter {
+            background-position: -80px 7px;
+        }
+        &--linkedin {
+            background-position: -120px 7px;
+        }
+    }
+}
