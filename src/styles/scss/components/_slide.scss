@@ -1,0 +1,44 @@
+.slide {
+  &__main {
+  background-color: $color-pink;
+  }
+  &__container-main {
+    @include flex;
+  }
+  
+  &__vertical-main {
+    padding: 8% 0;
+    max-width: 24%;
+  }
+  &__horizontal-main {
+    object-fit: contain;
+    max-width: 50%;
+  }
+  &__secondary {
+    background-color: $color-blue ;
+  }
+  &__container-secondary {
+    @include flex;
+  }
+  &__vertical-secondary {
+    position: absolute;
+    z-index: 2;
+    left: 5px;
+    right: 0;
+
+    margin: auto;
+    max-width: 24%;
+  }
+  &__background-left,
+  &__background-right {
+    max-width: 16%;
+    padding: 16% 0;
+    opacity: 0.5;
+  }
+}
+.prev,
+.next {
+  font-size: 3vw;
+  color: $color-white;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+.main {
+    background-color: $color-base-blue;
+    &__title {
+        padding: 60px 0 14px;
+
+        @include font($font-weight-900, $color-title, $font-size-30);
+        text-transform: capitalize;
+    }
+    &__text {
+        @include font($font-weight-300, $color-paragraph, $font-size-18);
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        padding: 18px 0;
+    }
+    &__item {
+        padding-right: 10px;
+    }
+    &__button {
+        @include font($font-weight-400, $color-paragraph, $font-size-12);
+
+        background-color: $color-base-blue;
+        border: 1px solid $color-paragraph;
+        border-radius: 5px;
+
+        &:hover {
+        @include font($font-weight-400, $color-white, $font-size-12);
+
+        border: 1px solid $color-white;
+        cursor: pointer;
+        }
+        &:checked {
+            background-color: $color-white;
+            transition: background-color 0s;
+        }
+    }
+    &__sorting {
+        @include flex;
+        flex-wrap: wrap;
+        margin-bottom: 53px;
+    }
+    &__img {
+        max-width: 40vw;
+
+        max-height: 40vw;
+        margin-bottom: 20px;
+    }
+    
+}
+.hide {
+    display: none;
+}
