@@ -1,0 +1,80 @@
+@media screen and (max-width: 558px) { 
+    .header__nav {
+        justify-content: center;
+    }
+    .header__list {
+        display: none;
+
+        box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.6);
+    }
+    .header__item {
+        padding:0 0 30px 70px;
+        &::after {
+            display: none;
+        }
+    }
+    .header__link {
+        @include font($font-weight-700, $color-white, $font-size-25);
+    }
+    .show {
+        position: fixed;
+        z-index: 70;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column;
+        height: 100%;
+        width: 75%;
+        
+        background-color: #2D303A;  
+    }
+    .gamburger-menu {
+        display: block;
+
+        position: fixed;
+        top: 34px;
+        z-index: 100;
+        left: 25px;
+        width: 25px;
+        height: 2.4px;
+
+        background-color: #F2F2F2;
+        border-radius: 5px;
+        cursor: pointer;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 25px;
+            height: 2.4px;
+            transform: translateY(-23px);
+            background-color: #F2F2F2;
+            border-radius: 5px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 18;
+            top: 34px;
+            left: 0;
+            width: 25px;
+            height: 2.4px;
+            transform: translateY(-20px);
+            background-color: #F2F2F2;
+            border-radius: 5px;
+        }
+    }
+    .services-section__item {
+        width: auto;
+    }
+    .gamburger-menu.active {
+        top: 43px;
+        left: 28px;
+
+        transform: rotate(90deg);  
+    }
+}
