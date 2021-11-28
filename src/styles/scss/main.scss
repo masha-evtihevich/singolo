@@ -1,12 +1,15 @@
 // Config
-@import '../scss/config/base';
 @import 'config/_mixins';
+@import 'config/_variables';
 @import 'config/_resets';
-@import 'config/_variables.scss';
+@import 'config/_base';
 
 // // Components
 @import 'components/header';
 @import 'components/slide';
+@import 'components/services';
+@import 'components/main';
+@import 'components/footer';
 
 // Media
 @import 'config/media';
